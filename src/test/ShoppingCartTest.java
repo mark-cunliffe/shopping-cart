@@ -1,5 +1,6 @@
 package src.test;
 
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -16,6 +17,11 @@ public class ShoppingCartTest {
     @Before
     public void setup(){
         cart = new ShoppingCart();
+    }
+
+    @After
+    public void tearDown(){
+        cart = null;
     }
 
     @Test
